@@ -3,11 +3,13 @@ from django.db.models.fields import return_None
 from django.http import HttpResponse
 from django.shortcuts import render
 def index(request):
-    return HttpResponse("hello world")
+    param={"name":"Jhone","language":"english"}
+    return render(request,'index.html',param)
 
 def about(request):
+    param={"name":"Nitesh","language":"python"}
     # return HttpResponse("hello this is about ")
-    return render(request, 'index.html')
+    return render(request,'index.html',param)
 
 def removepunc(request):
     return HttpResponse("you are inside the removepunc function")
