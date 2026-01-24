@@ -7,5 +7,5 @@ Steps to create first Web App
 2. run below command
 ```django-admin startproject project_name```
 
-3.run the server
+3. run the server
 ```python .\myfirstsite\manage.py runserver```
