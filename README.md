@@ -8,9 +8,9 @@ WSGI is synchronous and best for traditional web apps, while ASGI is asynchronou
 4. Simple APIs
 
 Use ASGI if:
-** WebSockets
-** Background tasks
-** High concurrency
+> WebSockets
+>  Background tasks
+> High concurrency
 
 Steps to create first Web App
 1. install django
