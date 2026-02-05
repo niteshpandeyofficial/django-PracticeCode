@@ -22,7 +22,8 @@ Steps to create first Web App
 3. run the server
 ```python .\myfirstsite\manage.py runserver```
 
-python manage.py startapp myfirstsite
+python manage.py startapp myfirstsite  +
+
 --create a new django app(folder+file)
 
 start the Django development server
