@@ -21,3 +21,73 @@ Steps to create first Web App
 
 3. run the server
 ```python .\myfirstsite\manage.py runserver```
+
+python manage.py startapp myfirstsite
+--create a new django app(folder+file)
+
+start the Django development server
+--run your project
+--does not create anything
+python .\myfirstsite\manage.py runserver
+
+Normal Analogy
+startproject -- Create the city
+startapp --Create a building
+runserver --open the city so people can visit.
+
+Project Structure Details
+myfirstsite/myfirstsite/ (inner folder)
+--it does not contain the business logic-it contains setting and wiring.
+
+setting.py
+the brain of Django project
+this file control 
+	1.Installed apps
+	2.Database configuration
+	3.Middleware
+	4.Templates
+	5.Static Files
+	6.Security Settings
+	
+urls.py
+URL routing(URL->View Mapping)
+
+wsgi.py(sync)
+web server ggateway interface
+	1.deploying django on server like Gunicorn,uWSGI
+	2.production environment
+	
+asgi.py
+Asyncronous server gateway interface.
+used for:
+	Websockets
+	Async views
+	real-time apps(chat,notification)
+	(Daphne,Uvicorn)
+
+views.py
+Business Logic
+--Request are handled.
+--Responses are returned. 
+
+tests.py
+--Automation testing
+	1.unit tests
+	2.integration tests
+	
+	
+Templates folder(django does not  create it automatically)
+Fromtend presentation layer.
+Structure
+	templates/
+		myapps/
+			insex.html
+	
+Static folder(Does not create by Django)
+static/
+	myapps/
+		css/
+		js/
+		images/
+		
+configured in setting.py
