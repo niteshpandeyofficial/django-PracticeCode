@@ -39,15 +39,19 @@ Project Structure Details
 myfirstsite/myfirstsite/ (inner folder)  
 --it does not contain the business logic-it contains setting and wiring.  
 
-*** setting.py  
-The brain of Django project  
-This file control  
-	1.Installed apps  
-	2.Database configuration  
-	3.Middleware  
-	4.Templates  
-	5.Static Files  
-	6.Security Settings  
+## ⚙️ Django Settings File
+
+> The main configuration file of the Django project.
+
+### Responsibilities
+
+- **Installed Apps** – Registers applications used in the project  
+- **Database Configuration** – Defines database connection settings  
+- **Middleware** – Controls request and response processing  
+- **Templates** – Manages template engine settings  
+- **Static Files** – Configures CSS, JS, and image handling  
+- **Security Settings** – Handles authentication and security policies
+
 	
 urls.py  
 URL routing(URL->View Mapping)  
@@ -75,18 +79,25 @@ Business Logic
 	1.unit tests  
 	2.integration tests  
 	
-*** Templates folder(django does not  create it automatically)  
-Fromtend presentation layer.  
-Structure  
-	templates/  
-		myapps/  
-			insex.html  
+*** Templates folder(django does not  create it automatically)    
+## Templates Folder Structure
+
+```
+templates/
+└── myapps/
+    └── index.html
+```
+
 	
-*** Static folder(Does not create by Django)  
-static/  
-	myapps/  
-		css/  
-		js/  
-		images/  
+Static folder (Does not create by Django)
+```
+static/
+│
+└── myapps/
+    ├── css/
+    ├── js/
+    └── images/
+```
+
 		
 *** configured in setting.py  
