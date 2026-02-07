@@ -25,6 +25,50 @@ Steps to create first Web App
 python manage.py startapp myfirstsite.  
 --create a new django app(folder+file)   
 
+### django-admin startproject project_name
+This command creates a new Django project.  
+A project is the overall configuration and container for your entire Django application. It includes settings, main URL configuration, and deployment-related files.
+
+```
+django-admin startproject myproject
+```
+
+### Important Files:
+manage.py – Command-line utility to interact with the project.  
+settings.py – Project-level configuration (database, middleware, installed apps, etc.).  
+urls.py – Main URL routing configuration.  
+wsgi.py / asgi.py – Used for deployment (WSGI for traditional servers, ASGI for async support).  
+
+
+### python manage.py startapp app_name  
+
+This command creates a new Django app inside an existing project.
+An app is a module that handles a specific feature or functionality (e.g., blog, authentication, payments).
+```
+python manage.py startapp blog
+```
+
+### Important Files:
+
+models.py – Defines database models (tables).
+views.py – Contains business logic and request handling.
+admin.py – Registers models for Django admin panel.
+apps.py – App configuration.
+tests.py – For writing test cases.
+
+⚠️ After creating an app, you must register it in settings.py under:
+
+```
+INSTALLED_APPS = [
+    'blog',
+]
+```
+
+### simple analogy
+
+Project = Entire website/application  
+App = A specific feature of that website  
+
 start the Django development server  
 1. run your project  
 2. does not create anything  
